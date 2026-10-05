@@ -1,0 +1,188 @@
+{
+  "id": "sigf/rewrite-2010",
+  "version": "0.4.0",
+  "name": "2010 Rust Rewrite Mashup",
+  "tagline": "MW2 (2009), Minecraft and Skate 3 in one Rust game: MW2 maps with bots, an endless Minecraft world fought with MW2 guns, and skating on any map.",
+  "kind": "mashup",
+  "games": [
+    {
+      "game": "mw2",
+      "role": "host",
+      "label": "Call of Duty: Modern Warfare 2 (2009)",
+      "engine": "IW4L (Rust rewrite of the IW4 engine) reading MW2's fastfiles in place",
+      "apps": {
+        "steam": "10190"
+      },
+      "runtime": "PC multiplayer (iw4mp.exe and zone/), tested with the Steam version",
+      "mode": "bots, LAN or IW4L's own servers; never MW2's official multiplayer"
+    },
+    {
+      "game": "minecraft",
+      "role": "guest",
+      "label": "Minecraft",
+      "mc": "26.3",
+      "uses": "client.jar and assets downloaded from Mojang on first run (about 125 MB)"
+    },
+    {
+      "game": "skate3",
+      "role": "guest",
+      "label": "Skate 3 (Xbox 360, optional)",
+      "uses": "your own extracted copy (default.xex + data/), converted on your PC; skating needs a controller"
+    }
+  ],
+  "requires": [
+    {
+      "id": "mw2-multiplayer",
+      "page": "https://store.steampowered.com/app/10180/",
+      "note": "Modern Warfare 2 (2009) with multiplayer installed (the folder with iw4mp.exe and zone/); IW4L only reads it"
+    },
+    {
+      "id": "minecraft-java",
+      "page": "https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc",
+      "note": "own Minecraft: Java Edition; the game downloads 26.3's files from Mojang itself on first run"
+    },
+    {
+      "id": "skate3-xbox360",
+      "optional": true,
+      "note": "your own Skate 3 disc or Games on Demand copy, extracted (extract-xiso or Velocity): default.xex with its data folder; ISO files are refused"
+    },
+    {
+      "id": "controller",
+      "optional": true,
+      "note": "an Xbox controller, needed to skate"
+    }
+  ],
+  "install": [
+    {
+      "game": "mw2",
+      "strategy": "profile",
+      "files": [
+        {
+          "src": "2010-Rust-Rewrite-Mashup-windows-x64.zip",
+          "dst": "{app}",
+          "root": "2010-Rust-Rewrite-Mashup",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "2010-Rust-Rewrite-Mashup/COPYING-FreeFont.txt",
+              "sha256": "3b7cf77c3518039a1b46a52ad7ed6a69f3f0a38a3c3274fc9846145568902a9a"
+            },
+            {
+              "path": "2010-Rust-Rewrite-Mashup/LICENSE",
+              "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5"
+            },
+            {
+              "path": "2010-Rust-Rewrite-Mashup/Minecraft World.bat",
+              "sha256": "9830e3be88a10bf97ec38d4d5d154989bf8e059902827c6c4205bf6fcadac410"
+            },
+            {
+              "path": "2010-Rust-Rewrite-Mashup/NOTICE",
+              "sha256": "df07306477d8728ff4771e5692050e01df3b0d2df7f461a27749fe2c7b44ff2c"
+            },
+            {
+              "path": "2010-Rust-Rewrite-Mashup/OFL-Oxanium.txt",
+              "sha256": "520a09e6882633c90889fa75faf55ca93e6e62a5f98c7ffca3db832c1b3d4173"
+            },
+            {
+              "path": "2010-Rust-Rewrite-Mashup/README.txt",
+              "sha256": "47e30e27530ca8aadc4dd327d76f026906c4612d15803806e7b108790ccbc4fc"
+            },
+            {
+              "path": "2010-Rust-Rewrite-Mashup/iw4l.exe",
+              "sha256": "7749d48cf176190c3b54c38ecfc20c540d076aec83714f58ad2b4f4f7954bd38"
+            },
+            {
+              "path": "2010-Rust-Rewrite-Mashup/skate/iw4l-skate-convert.exe",
+              "sha256": "94ea891158d6d9c2f46155a6c229319861a659d31a37c0a6873e435750f6dc29"
+            },
+            {
+              "path": "2010-Rust-Rewrite-Mashup/skate/licenses/CustomEngineLayer.txt",
+              "sha256": "3158217ea104a2982957e3d36e409fe3d8318b35f2641ed8a17025c0126f939f"
+            },
+            {
+              "path": "2010-Rust-Rewrite-Mashup/skate/licenses/NumPy.txt",
+              "sha256": "a804dff0ead9fadc5293456410bcbfc32bf024be9c4513459663fb7b442d2341"
+            },
+            {
+              "path": "2010-Rust-Rewrite-Mashup/skate/licenses/Pillow.txt",
+              "sha256": "926df5f888a7337fd4126a435202edf2847312be81a167df91a6d70cfa3f2ed3"
+            },
+            {
+              "path": "2010-Rust-Rewrite-Mashup/skate/licenses/Python.txt",
+              "sha256": "62bec384df47b0328307db41455ff6ea2559e5546b394ac69148561b21703120"
+            },
+            {
+              "path": "2010-Rust-Rewrite-Mashup/skate/licenses/UTT.txt",
+              "sha256": "042d55c27d3dbf5847cd222e9a468d1e8ae0fda35337d5d0fc14e9da5b70e6bd"
+            }
+          ],
+          "url": "https://github.com/chasmlol/2010-rust-rewrite-mashup/releases/download/v0.4.0/2010-Rust-Rewrite-Mashup-windows-x64.zip",
+          "sha256": "f7c02cfb4dd5650be29762947a0b17d3e6f9b9f1259025ee89a99bd031e1ebca",
+          "size": 70231384
+        }
+      ]
+    }
+  ],
+  "launch": [],
+  "files": [
+    {
+      "name": "2010-Rust-Rewrite-Mashup-windows-x64.zip",
+      "url": "https://github.com/chasmlol/2010-rust-rewrite-mashup/releases/download/v0.4.0/2010-Rust-Rewrite-Mashup-windows-x64.zip",
+      "sha256": "f7c02cfb4dd5650be29762947a0b17d3e6f9b9f1259025ee89a99bd031e1ebca",
+      "size": 70231384
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/chasmlol/2010-rust-rewrite-mashup",
+    "license": "Apache-2.0 (upstream download)",
+    "upstream_license": "Apache-2.0",
+    "fetch": "upstream",
+    "tag": "v0.4.0",
+    "commit": "f608f85e407ff1b7689d54a9aafdd16e95711ac4",
+    "hosted": "https://github.com/SIGFAI/rewrite-2010",
+    "based_on": "https://github.com/vladtrc/iw4L",
+    "linked": [
+      {
+        "name": "skate crates and converter",
+        "repo": "https://github.com/SK8-ENGINE/skate-3-rust-engine",
+        "commit": "cb79689",
+        "license": "none (not redistributed by SIGF)"
+      },
+      {
+        "name": "MinecraftOSS worldgen crates",
+        "commit": "4013a68",
+        "license": "not stated in the repo"
+      }
+    ]
+  },
+  "media": {},
+  "built_by": {
+    "author": "chasmlol",
+    "authors": [
+      "chasmlol",
+      "vladtrc",
+      "gitoutofthere",
+      "awsms",
+      "Intelios",
+      "LuaxY",
+      "Wet-Shoelace",
+      "vmpprotect",
+      "johnseth97"
+    ],
+    "packaged_by": "SIGF"
+  },
+  "idea_by": "chasmlol",
+  "built_at": "2026-10-05T00:00:00.000Z",
+  "status": "beta",
+  "issues": "https://github.com/chasmlol/2010-rust-rewrite-mashup/issues",
+  "notes": [
+    "Windows 64-bit. You need Call of Duty: Modern Warfare 2 (2009) on PC with multiplayer installed (Steam works). Skate 3 is optional.",
+    "Start it yourself for now: open this mashup's folder (Open folder in the app) and run iw4l.exe (\"Minecraft World.bat\" goes straight to the Minecraft map). The app downloads the authors' own release, unchanged.",
+    "First run: confirm your MW2 folder (the one with iw4mp.exe and zone/; IW4L never changes it). It then downloads Minecraft 26.3's files from Mojang (about 125 MB) and plays offline after that.",
+    "Skating (optional): answer Yes and select default.xex inside your own extracted Skate 3 Xbox 360 copy (extract-xiso or Velocity; an .iso is refused). It copies the skater, animations and physics settings into skate-data/ on your PC. Nothing from Skate 3 is shipped. J or both sticks toggle skating (controller needed).",
+    "Minecraft map: Create Game > MINECRAFT tab > overworld. E inventory, 1-9 hotbar, Q drop, ` console.",
+    "Offline with bots, LAN, or IW4L's own servers only: it never connects to MW2's official multiplayer, Steam or VAC.",
+    "Start over: delete .env next to iw4l.exe. Restore deletes the whole folder, including the downloaded Minecraft files and skate-data.",
+    "Beta with open bug reports (invisible skateboard on some maps, missing killcams, skate markers): report bugs to the authors on the upstream issue tracker."
+  ]
+}
