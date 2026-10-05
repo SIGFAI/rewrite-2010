@@ -4,11 +4,11 @@
   "name": "2010 Rust Rewrite Mashup",
   "tagline": "MW2 (2009), Minecraft and Skate 3 in one Rust game: MW2 maps with bots, an endless Minecraft world fought with MW2 guns, and skating on any map.",
   "how_to_play": [
-    "Play MW2 (2009) maps with bots, fight through an endless Minecraft world with MW2 guns, and skate on any map.",
-    "Minecraft map: E inventory, 1-9 hotbar, Q drops an item, left click mines, right click places, ` opens the console.",
-    "Press J or click both sticks to toggle skating (a controller is needed to skate).",
-    "Start it by running iw4l.exe from this mashup's folder (Open folder in the app); the Play button cannot start it yet.",
-    "For the Minecraft world go to Create Game > MINECRAFT tab > overworld, or run Minecraft World.bat."
+    "One new game (IW4L): MW2 (2009) multiplayer maps with bots, an endless Minecraft world you fight through with MW2 guns, and Skate 3 skating on any map.",
+    "Open this mashup's folder (Open folder in the app) and run iw4l.exe; the Play button cannot start it yet.",
+    "Minecraft map: Create Game > MINECRAFT tab > overworld (or run \"Minecraft World.bat\").",
+    "E inventory, 1-9 hotbar, Q drop, left click mine, right click place, ` console.",
+    "J or clicking both sticks toggles skating (a controller is needed to skate)."
   ],
   "kind": "mashup",
   "games": [
@@ -183,9 +183,7 @@
   "status": "beta",
   "issues": "https://github.com/chasmlol/2010-rust-rewrite-mashup/issues",
   "notes": [
-    "How it works: one new Rust game (IW4L) plays Modern Warfare 2 (2009) multiplayer maps with bots, an endless Minecraft world you fight through with MW2 guns, and Skate 3 skating on any map. It reads your MW2 files and never changes them.",
-    "To start: open this mashup's folder (Open folder in the app) and run iw4l.exe; the Play button cannot start it yet. First run: confirm your MW2 folder, answer Yes and pick Skate 3's default.xex, or No to play without skating. It downloads Minecraft 26.3's files from Mojang (about 125 MB) once.",
-    "Minecraft map: Create Game > MINECRAFT tab > overworld (or run \"Minecraft World.bat\"). E inventory, 1-9 hotbar, Q drop, left click mine, right click place, ` console. J or clicking both sticks toggles skating (controller needed to skate).",
+    "First run: confirm your MW2 folder, answer Yes and pick Skate 3's default.xex, or No to play without skating. It downloads Minecraft 26.3's files from Mojang (about 125 MB) once. It reads your MW2 files and never changes them.",
     "You need MW2 (2009) on PC with multiplayer installed (the folder with iw4mp.exe and zone/; tested with Steam), Windows 64-bit, and internet on the first run. Optional: your own Skate 3 for Xbox 360, extracted (extract-xiso or Velocity; an .iso is refused), and an Xbox controller.",
     "Offline with bots, LAN or IW4L's own servers only: it never connects to MW2's official multiplayer, Steam or VAC. Start over: delete .env next to iw4l.exe. Restore deletes the whole folder, including the Minecraft files and skate-data.",
     "Beta with open bugs (invisible skateboard on some maps, missing killcams, skate markers): report bugs to the authors with the Report a bug link."
