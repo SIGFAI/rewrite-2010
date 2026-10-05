@@ -3,6 +3,13 @@
   "version": "0.4.0",
   "name": "2010 Rust Rewrite Mashup",
   "tagline": "MW2 (2009), Minecraft and Skate 3 in one Rust game: MW2 maps with bots, an endless Minecraft world fought with MW2 guns, and skating on any map.",
+  "how_to_play": [
+    "Play MW2 (2009) maps with bots, fight through an endless Minecraft world with MW2 guns, and skate on any map.",
+    "Minecraft map: E inventory, 1-9 hotbar, Q drops an item, left click mines, right click places, ` opens the console.",
+    "Press J or click both sticks to toggle skating (a controller is needed to skate).",
+    "Start it by running iw4l.exe from this mashup's folder (Open folder in the app); the Play button cannot start it yet.",
+    "For the Minecraft world go to Create Game > MINECRAFT tab > overworld, or run Minecraft World.bat."
+  ],
   "kind": "mashup",
   "games": [
     {
