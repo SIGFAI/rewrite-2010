@@ -5,7 +5,7 @@
   "tagline": "MW2 (2009), Minecraft and Skate 3 in one Rust game: MW2 maps with bots, an endless Minecraft world fought with MW2 guns, and skating on any map.",
   "how_to_play": [
     "One new game (IW4L): MW2 (2009) multiplayer maps with bots, an endless Minecraft world you fight through with MW2 guns, and Skate 3 skating on any map.",
-    "Open this mashup's folder (Open folder in the app) and run iw4l.exe; the Play button cannot start it yet.",
+    "Press Play: iw4l.exe starts. On an older SIGF app, open this mashup's folder (Open folder in the app) and run iw4l.exe.",
     "Minecraft map: Create Game > MINECRAFT tab > overworld (or run \"Minecraft World.bat\").",
     "E inventory, 1-9 hotbar, Q drop, left click mine, right click place, ` console.",
     "J or clicking both sticks toggles skating (a controller is needed to skate)."
@@ -130,7 +130,12 @@
       ]
     }
   ],
-  "launch": [],
+  "launch": [
+    {
+      "game": "mw2",
+      "app_exe": "iw4l.exe"
+    }
+  ],
   "files": [
     {
       "name": "2010-Rust-Rewrite-Mashup-windows-x64.zip",
